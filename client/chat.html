@@ -1,0 +1,33 @@
+<div>
+    <style>
+        
+    </style>
+    
+    <div class="col-md-2" style="padding-top: 40px;height: 100vh;">
+        <div ng-repeat="c in contacts" style="padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);">
+            {{c}}
+        </div>
+        
+    </div>
+    <div class="col-md-10" style="height: 100vh;background: #fff;">
+       <div class="col-md-12" style="height: 88vh;">
+           <div class="prev_chat_area" >
+               
+           </div>
+       </div>
+       <div class="col-md-12">
+            <div class="col-md-10">
+                <input ng-model="chat_input" type="text" class="col-md-8 form-control">
+            </div>
+            <div class="col-md-2">    
+                <button class="btn btn-default col-md-12" ng-click="sendBtn()">Send</button>    
+            </div>
+        </div>
+    </div>
+    
+    
+        
+        
+
+</div>
