@@ -1,0 +1,188 @@
+body {
+    background: #2c3e50;
+    color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+@font-face {
+  font-family: 'Bungee';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee'), local('Bungee-Regular'), url(yTWLtzpDqG8wqsk2Of1ReOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+@font-face {
+  font-family: 'Bungee Shade';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bungee Shade'), local('BungeeShade-Regular'), url(HSW7pxPYXBWkq7OSnuXoeKRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
+#instruction{
+    font-size:20px;
+    text-align:center;
+    font-family: 'Bungee', cursive;
+    color:white;
+    position: absolute;
+    bottom: 30px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#instruction2{
+    font-size:20px;
+    text-align:center;
+    font-family: 'Bungee', cursive;
+    color:white;
+    position: absolute;
+    bottom: 60px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#selectedTiles {
+    position: absolute;
+    bottom: 15%;
+    width: 80%;
+    left: 10%;
+}
+
+#resetBtn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    background: white;
+    border-radius: 50px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    outline: transparent !important;
+}
+
+.tile {
+    /*
+    width: 50px;height: 50px;
+border: 8px solid white;
+*/
+    width: 40px;
+    height: 40px;
+    /*    border: 4px solid white;*/
+    display: inline-block;
+    margin-right: 4px;
+    padding: 4px;
+    font-size: 20px;
+    
+}
+
+.showArrow {
+    color: green;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.dot {
+    width: 65px;
+    height: 65px;
+    /*    border: 6px solid white;*/
+    display: inline-block;
+    margin-right: 4px;
+    border-radius: 50px;
+}
+
+.endBtn{
+    font-size: 30px;
+    width: 18%;
+    background: #ecf0f1;
+    color: #2C3E50;
+    border-radius: 50px;
+    height: 70px;
+}
+
+.lightBlue {
+    background-color: #3498db;
+}
+
+.lightGreen {
+    background-color: #2ecc71;
+}
+
+.lightViolet {
+    background-color: #9b59b6;
+}
+
+.yellow {
+    background-color: #f1c40f;
+}
+
+.orange {
+    background-color: #d35400;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.grey {
+    background-color: #b1adad;
+}
+
+.pink {
+    background-color: #E91E63;
+}
+
+#puzzle {
+    position: absolute;
+    top: 10%;
+    bottom: 3%;
+    left: 0px;
+    right: 0px;
+}
+
+.blink {
+    animation: blink-animation 5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 5s steps(5, start) infinite;
+}
+
+#playProgress {
+    height: 40px;
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+        border: 8px solid white;
+    border-radius: 20px;
+}
+
+#playMeter {
+    border-radius: 20px;
+}
+
+@keyframes blink-animation {
+    to {
+/*            visibility: hidden;*/
+        opacity: 0.5;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+/*            visibility: hidden;*/
+        opacity: 0.5;
+    }
+}

@@ -1,0 +1,60 @@
+<div>
+    <div style="margin-top: 15px;">
+        <div class="col-xs-12" style="padding:0px;">
+            <div class="col-xs-4" style="text-align:center;"><div style="text-align:left;font-size:12px;font-family: 'Bungee', cursive;">
+                    High Score
+                    <br>
+                    {{game.highscore}}
+                </div></div>
+            <div id="scoreCount" class="col-xs-4" style="font-size:36px;text-align:center;font-family: 'Courgette', cursive;font-family: 'Bungee', cursive;">{{scoreCount}}%</div>
+            <div class="col-xs-4">
+                <div style="text-align:right;font-size:12px;font-family: 'Bungee', cursive;">
+                    Score
+                    <br>
+                    {{game.score}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="puzzle">
+
+
+        <div id="playProgress" style="background: white;">
+            <playmeter></playmeter>
+        </div>
+
+
+        <div style="text-align:center;">
+
+            <div ng-repeat="row in tileMap" class="col-xs-12">
+
+                <tile ng-repeat="col in row.cols" name="r{{row.rowNum}}c{{col.tileNum}}" row="{{row.rowNum}}" col={{col.tileNum}} class_name="tile {{col.color}}" color="{{col.color}}"></tile>
+
+            </div>
+
+        </div>
+
+        <div id="selectedTiles">
+            <div ng-repeat="dot in selectedDots" class="slot col-xs-4" style="text-align:center;">
+                <dot name="{{dot.name}}" class_name="dot {{dot.color}}"></dot>
+            </div>
+        </div>
+
+       <!-- <button id="resetBtn" ng-click="onReset()">
+            <i class="fa fa-repeat" aria-hidden="true" style="    color: grey;font-size:30px;"></i>
+        </button>-->
+        
+        <div id="instruction" style="color:white;" >
+            {{game.msg1}}
+            <br>
+            {{game.msg2}}
+        </div>
+
+        <div style="position:absolute;text-align:center;top:50%;left:0px;right:0px;">
+            <button id="#tryAgain" class="endBtn" ng-click="" style="display:none;"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            <button id="#back" class="endBtn" ng-click="" style="display:none;"><i class="fa fa-repeat" aria-hidden="true"></i></button>
+        </div>
+
+
+    </div>
+</div>
